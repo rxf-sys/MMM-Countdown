@@ -1,10 +1,164 @@
-/*
+/**
+ * MMM-CountDown Styles
  *
- * MMM-CountDown
+ * Custom styling for the countdown module
  *
- * 
  * MIT Licensed.
- *
- * Custom here your css module
- *
  */
+
+/* Main wrapper */
+.mmm-countdown-wrapper {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+/* Event title styling */
+.countdown-event {
+	margin-bottom: 15px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+/* Time container */
+.countdown-time {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Row style (default) */
+.countdown-time.row-style {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Column style */
+.countdown-time.column-style {
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Individual time component */
+.countdown-component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 60px;
+	padding: 8px 12px;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.05);
+	transition: all 0.3s ease;
+}
+
+.countdown-component:hover {
+	background: rgba(255, 255, 255, 0.1);
+	transform: translateY(-2px);
+}
+
+/* Time value */
+.countdown-value {
+	font-size: 2.5em;
+	font-weight: 600;
+	line-height: 1;
+	font-family: "Roboto Condensed", sans-serif;
+	margin-bottom: 5px;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Time label */
+.countdown-label {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	opacity: 0.7;
+	font-weight: 400;
+}
+
+/* End message when countdown reaches zero */
+.countdown-end {
+	margin-top: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	animation: pulse 2s ease-in-out infinite;
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Pulse animation for end message */
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.8;
+		transform: scale(1.05);
+	}
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+	.countdown-time.row-style {
+		gap: 8px;
+	}
+
+	.countdown-component {
+		min-width: 50px;
+		padding: 6px 10px;
+	}
+
+	.countdown-value {
+		font-size: 2em;
+	}
+
+	.countdown-label {
+		font-size: 0.7em;
+	}
+}
+
+/* Styling for weeks component */
+.countdown-component.weeks {
+	border: 1px solid rgba(100, 200, 255, 0.3);
+}
+
+/* Styling for days component */
+.countdown-component.days {
+	border: 1px solid rgba(100, 255, 200, 0.3);
+}
+
+/* Styling for hours component */
+.countdown-component.hours {
+	border: 1px solid rgba(255, 200, 100, 0.3);
+}
+
+/* Styling for minutes component */
+.countdown-component.minutes {
+	border: 1px solid rgba(255, 150, 150, 0.3);
+}
+
+/* Styling for seconds component */
+.countdown-component.seconds {
+	border: 1px solid rgba(200, 150, 255, 0.3);
+}
+
+/* Alternative compact mode styling */
+.mmm-countdown-wrapper.compact .countdown-component {
+	padding: 5px 8px;
+	min-width: 45px;
+}
+
+.mmm-countdown-wrapper.compact .countdown-value {
+	font-size: 2em;
+}
+
+.mmm-countdown-wrapper.compact .countdown-label {
+	font-size: 0.7em;
+}
