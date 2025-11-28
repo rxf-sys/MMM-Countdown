@@ -1,8 +1,8 @@
-# MMM-CountDown
+# MMM-Countdown
 
 Ein [MagicMirror²](https://magicmirror.builders/) Modul zum Anzeigen eines Countdowns zu einem bestimmten Event oder Datum.
 
-![MMM-CountDown Screenshot](screenshots/screenshot.png)
+![MMM-Countdown Screenshot](screenshots/screenshot.png)
 
 ## Features
 
@@ -44,7 +44,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 
 ```javascript
 {
-	module: "MMM-CountDown",
+	module: "MMM-Countdown",
 	position: "top_left",
 	config: {
 		event: "Weihnachten 2025",
@@ -57,7 +57,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 
 ```javascript
 {
-	module: "MMM-CountDown",
+	module: "MMM-Countdown",
 	position: "top_left",
 	config: {
 		event: "Mein Geburtstag",           // Event-Titel
@@ -114,7 +114,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 ### Countdown zu Silvester 2025
 ```javascript
 {
-	module: "MMM-CountDown",
+	module: "MMM-Countdown",
 	position: "top_center",
 	config: {
 		event: "Silvester 2025",
@@ -129,7 +129,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 ### Countdown zum Urlaub (ohne Sekunden)
 ```javascript
 {
-	module: "MMM-CountDown",
+	module: "MMM-Countdown",
 	position: "middle_center",
 	config: {
 		event: "Sommerurlaub",
@@ -145,7 +145,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 ### Countdown mit Wochen
 ```javascript
 {
-	module: "MMM-CountDown",
+	module: "MMM-Countdown",
 	position: "top_left",
 	config: {
 		event: "Hochzeit =",
@@ -159,7 +159,7 @@ Füge das Modul zur `config/config.js` Datei deines MagicMirror hinzu:
 
 ## Styling
 
-Das Modul verwendet CSS-Klassen, die du in der Datei `MMM-CountDown.css` anpassen kannst. Du kannst auch eigene CSS-Regeln in der `custom.css` deines MagicMirror hinzufügen:
+Das Modul verwendet CSS-Klassen, die du in der Datei `MMM-Countdown.css` anpassen kannst. Du kannst auch eigene CSS-Regeln in der `custom.css` deines MagicMirror hinzufügen:
 
 ### Verfügbare CSS-Klassen
 

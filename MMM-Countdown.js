@@ -1,5 +1,5 @@
 /**
- * MagicMirror² Module: MMM-CountDown
+ * MagicMirror² Module: MMM-Countdown
  *
  * Displays a countdown to a specific event/date
  *
@@ -140,7 +140,7 @@ Module.register("MMM-Countdown", {
 	 * @returns {string[]} Array of CSS file paths
 	 */
 	getStyles: function() {
-		return ["MMM-CountDown.css"];
+		return ["MMM-Countdown.css"];
 	},
 
 	/**
